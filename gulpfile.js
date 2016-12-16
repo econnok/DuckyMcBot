@@ -6,8 +6,9 @@ var excludeGitignore = require('gulp-exclude-gitignore');
 var mocha = require('gulp-mocha');
 var istanbul = require('gulp-istanbul');
 var nsp = require('gulp-nsp');
-var plumber = require('gulp-plumber');
 
+var plumber = require('gulp-plumber');
+var Dota2Api = require('dota2api');
 gulp.task('static', function () {
   return gulp.src('**/*.js')
     .pipe(excludeGitignore())
